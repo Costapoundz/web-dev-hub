@@ -559,23 +559,24 @@
   </div>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Web Dev <span>Hub</span></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="service.php">Services</a></li>
-          <li class="nav-item active"><a class="nav-link" href="portfolio.php">Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link" href="ai_tools.php">AI Tools</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"><i class="fas fa-code me-2"></i>Web Dev Hub</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.php"><i class="fas fa-home me-1"></i> Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="service.php"><i class="fas fa-server me-1"></i> Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.php"><i class="fas fa-briefcase me-1"></i> Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="ai_tools.php"><i class="fas fa-robot me-1"></i> AI Tools</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-envelope me-1"></i> Contact</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
 
   <!-- Header Section -->
   <header class="header">
@@ -609,7 +610,7 @@
             'title' => 'Raakac',
             'image' => 'images/raakac.jpg',
             'link' => 'https://raakac.org',
-            'description' => 'Raakac is a construction and architectural website designed to showcase the client\'s portfolio and services. It has helped the client attract more customers by providing a professional online presence and an easy way for potential clients to explore their work and contact them.',
+            'description' => 'Raakac is a construction and architectural website designed to showcase the client\'s portfolio and services.',
             'tags' => ['Web Design', 'Architecture'],
             'category' => 'web'
           ],
@@ -618,16 +619,16 @@
             'image' => 'images/maricoz.jpg',
             'link' => 'https://maricoz.vercel.app/',
             'description' => 'Maricoz is a vibrant and modern landing page designed for tech and SaaS startups. It s fast, clean, and built for conversions.',
-            'tags' => ['UI/UX', 'SaaS'],
+            'tags' => ['UI/UX', 'SaaS','Web Design'],
             'category' => 'web'
           ],
           [
-            'title' => 'TechStore',
-            'image' => '/api/placeholder/400/320',
-            'link' => '#',
-            'description' => 'A modern e-commerce platform focused on tech products with robust search, filtering, and payment processing.',
-            'tags' => ['E-commerce', 'Web App'],
-            'category' => 'ecommerce'
+            'title' => 'Gra Flam savings',
+            'image' => 'images/gra.jpg',
+            'link' => 'https://graflamwelfaresavings.com/',
+            'description' =>  'A secure and user-friendly savings platform designed to help members manage contributions, withdrawals, and track their financial growth with ease.',
+            'tags' => ['Savings', 'Web App'],
+            'category' => 'savings'
           ],
           [
             'title' => 'FitTrack',
@@ -646,11 +647,11 @@
             'category' => 'ecommerce'
           ],
           [
-            'title' => 'Travelo',
-            'image' => '/api/placeholder/400/320',
-            'link' => '#',
+            'title' => 'Security',
+            'image' => 'images/security.jpg',
+            'link' => 'https://security-lilac-six.vercel.app/',
             'description' => 'An immersive travel planning platform with interactive maps, itinerary creation, and booking functionalities.',
-            'tags' => ['Web App', 'Travel'],
+            'tags' => ['Web App', 'security'],
             'category' => 'web'
           ]
         ];

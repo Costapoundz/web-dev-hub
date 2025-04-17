@@ -259,11 +259,13 @@
         <li class="nav-item"><a class="nav-link" href="index.php"><i class="fas fa-home me-1"></i> Home</a></li>
         <li class="nav-item"><a class="nav-link" href="service.php"><i class="fas fa-server me-1"></i> Services</a></li>
         <li class="nav-item"><a class="nav-link" href="portfolio.php"><i class="fas fa-briefcase me-1"></i> Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="ai_tools.php"><i class="fas fa-robot me-1"></i> AI Tools</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-envelope me-1"></i> Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
+
 
 <!-- Form Wrapper -->
 <div class="container mt-5">
@@ -306,10 +308,10 @@
         <div class="col-md-6">
           <div class="form-floating mb-3">
             <input type="url" class="form-control" id="company_website" name="company_website" placeholder="Company Website" required>
-            <label for="company_website">Company Website</label>
+            <label for="company_website">Company Website(add the https before the wesite name )</label>
           </div>
         </div>
-      </div>
+      </div> 
       
       <div class="form-floating mb-4">
         <textarea class="form-control" id="project_summary" name="project_summary" placeholder="Project Summary" rows="4" required></textarea>
