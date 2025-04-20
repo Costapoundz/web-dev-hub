@@ -22,8 +22,12 @@
       background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
       min-height: 100vh;
       padding-top: 80px;
-      position: relative;
-      padding-bottom: 120px; /* Footer space */
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .main-content {
+      flex: 1;
     }
     
     .navbar {
@@ -196,9 +200,7 @@
       background: rgba(33, 37, 41, 0.95);
       padding: 30px 0;
       color: white;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
+      margin-top: auto;
     }
     
     .social-icons i {
@@ -266,160 +268,117 @@
   </div>
 </nav>
 
-
-<!-- Form Wrapper -->
-<div class="container mt-5">
-  <div class="text-center mb-5">
-    <h1 class="page-title">Web Development Inquiry</h1>
-    <p class="lead text-muted">Tell us about your project and let's start building something amazing together.</p>
-  </div>
-  
-  <div class="step-indicator">
-    <div class="step active" id="stepIndicator1">1</div>
-    <div class="step" id="stepIndicator2">2</div>
-  </div>
-  
-  <!-- Step 1 Form -->
-  <div id="step1" class="form-container animate-in">
-    <h2 class="mb-4">Project Details</h2>
-    <form id="formStep1">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
-            <label for="name">Your Name</label>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required>
-            <label for="email">Email Address</label>
-          </div>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form-floating mb-3">
-            <input type="number" class="form-control" id="company_number" name="company_number" placeholder="Company Number" required>
-            <label for="company_number">Company Number</label>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="form-floating mb-3">
-            <input type="url" class="form-control" id="company_website" name="company_website" placeholder="Company Website" required>
-            <label for="company_website">Company Website(add the https before the wesite name )</label>
-          </div>
-        </div>
-      </div> 
-      
-      <div class="form-floating mb-4">
-        <textarea class="form-control" id="project_summary" name="project_summary" placeholder="Project Summary" rows="4" required></textarea>
-        <label for="project_summary">Project Summary</label>
-      </div>
-      
-      <div class="d-grid">
-        <button type="button" class="btn btn-primary" onclick="goToStep2()">
-          Next Step <i class="fas fa-arrow-right ms-2"></i>
-        </button>
-      </div>
-    </form>
-  </div>
-
-  <!-- Step 2 Form (Hidden by default) -->
-  <div id="step2" class="form-container" style="display: none;">
-    <h2 class="mb-4">Budget & Timeline</h2>
-    <form id="formStep2" action="submit_project.php" method="POST">
-      <!-- Hidden fields from step 1 -->
-      <input type="hidden" id="hidden_name" name="name">
-      <input type="hidden" id="hidden_company_number" name="company_number">
-      <input type="hidden" id="hidden_email" name="email">
-      <input type="hidden" id="hidden_company_website" name="company_website">
-      <input type="hidden" id="hidden_project_summary" name="project_summary">
-
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form-floating mb-3">
-            <input type="number" class="form-control" id="budget" name="budget" placeholder="Budget (USD)" required>
-            <label for="budget">Budget (USD)</label>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="timeline" name="timeline" placeholder="Project Timeline (e.g., 3 months)" required>
-            <label for="timeline">Project Timeline</label>
-          </div>
-        </div>
-      </div>
-      
-      <div class="form-floating mb-4">
-        <select class="form-select" id="priority" name="priority" required>
-          <option value="" selected disabled>Select your priority</option>
-          <option value="speed">Speed</option>
-          <option value="quality">Quality</option>
-          <option value="cost">Cost-efficiency</option>
-        </select>
-        <label for="priority">Project Priority</label>
-      </div>
-      
-      <div class="mt-4">
+<div class="main-content">
+  <!-- Form Wrapper -->
+  <div class="container mt-5">
+    <div class="text-center mb-5">
+      <h1 class="page-title">Web Development Inquiry</h1>
+      <p class="lead text-muted">Tell us about your project and let's start building something amazing together.</p>
+    </div>
+    
+    <div class="step-indicator">
+      <div class="step active" id="stepIndicator1">1</div>
+      <div class="step" id="stepIndicator2">2</div>
+    </div>
+    
+    <!-- Step 1 Form -->
+    <div id="step1" class="form-container animate-in">
+      <h2 class="mb-4">Project Details</h2>
+      <form id="formStep1">
         <div class="row">
-          <div class="col-md-6 mb-3 mb-md-0">
-            <button type="button" class="btn btn-outline-primary w-100" onclick="backToStep1()">
-              <i class="fas fa-arrow-left me-2"></i> Back
-            </button>
+          <div class="col-md-6">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+              <label for="name">Your Name</label>
+            </div>
           </div>
           <div class="col-md-6">
-            <button type="submit" class="btn btn-primary w-100">
-              Submit Request <i class="fas fa-paper-plane ms-2"></i>
-            </button>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required>
+              <label for="email">Email Address</label>
+            </div>
           </div>
         </div>
-      </div>
-    </form>
-  </div>
+        
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-floating mb-3">
+              <input type="number" class="form-control" id="company_number" name="company_number" placeholder="Company Number" required>
+              <label for="company_number">Company Number</label>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-floating mb-3">
+              <input type="url" class="form-control" id="company_website" name="company_website" placeholder="Company Website" required>
+              <label for="company_website">Company Website (add the https before the website name)</label>
+            </div>
+          </div>
+        </div> 
+        
+        <div class="form-floating mb-4">
+          <textarea class="form-control" id="project_summary" name="project_summary" placeholder="Project Summary" rows="4" required></textarea>
+          <label for="project_summary">Project Summary</label>
+        </div>
+        
+        <div class="d-grid">
+          <button type="button" class="btn btn-primary" onclick="goToStep2()">
+            Next Step <i class="fas fa-arrow-right ms-2"></i>
+          </button>
+        </div>
+      </form>
+    </div>
 
-  <!-- Services Showcase -->
-  <div class="row mt-5 mb-5">
-    <div class="col-12 text-center mb-4">
-      <h2>Our Services</h2>
-      <p class="text-muted">What we can do for your business</p>
-    </div>
-    
-    <div class="col-md-4 mb-4">
-      <div class="card card-animate h-100">
-        <div class="card-body text-center p-4">
-          <div class="py-3">
-            <i class="fas fa-laptop-code text-primary" style="font-size: 3rem;"></i>
+    <!-- Step 2 Form (Hidden by default) -->
+    <div id="step2" class="form-container" style="display: none;">
+      <h2 class="mb-4">Budget & Timeline</h2>
+      <form id="formStep2" action="submit_project.php" method="POST">
+        <!-- Hidden fields from step 1 -->
+        <input type="hidden" id="hidden_name" name="name">
+        <input type="hidden" id="hidden_company_number" name="company_number">
+        <input type="hidden" id="hidden_email" name="email">
+        <input type="hidden" id="hidden_company_website" name="company_website">
+        <input type="hidden" id="hidden_project_summary" name="project_summary">
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-floating mb-3">
+              <input type="number" class="form-control" id="budget" name="budget" placeholder="Budget (USD)" required>
+              <label for="budget">Budget (USD)</label>
+            </div>
           </div>
-          <h5 class="card-title">Web Development</h5>
-          <p class="card-text">Custom websites built with modern technologies that deliver exceptional user experiences.</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-4 mb-4">
-      <div class="card card-animate h-100">
-        <div class="card-body text-center p-4">
-          <div class="py-3">
-            <i class="fas fa-mobile-alt text-primary" style="font-size: 3rem;"></i>
+          <div class="col-md-6">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="timeline" name="timeline" placeholder="Project Timeline (e.g., 3 months)" required>
+              <label for="timeline">Project Timeline</label>
+            </div>
           </div>
-          <h5 class="card-title">Mobile Apps</h5>
-          <p class="card-text">Native and cross-platform mobile applications that engage your users on any device.</p>
         </div>
-      </div>
-    </div>
-    
-    <div class="col-md-4 mb-4">
-      <div class="card card-animate h-100">
-        <div class="card-body text-center p-4">
-          <div class="py-3">
-            <i class="fas fa-chart-line text-primary" style="font-size: 3rem;"></i>
+        
+        <div class="form-floating mb-4">
+          <select class="form-select" id="priority" name="priority" required>
+            <option value="" selected disabled>Select your priority</option>
+            <option value="speed">Speed</option>
+            <option value="quality">Quality</option>
+            <option value="cost">Cost-efficiency</option>
+          </select>
+          <label for="priority">Project Priority</label>
+        </div>
+        
+        <div class="mt-4">
+          <div class="row">
+            <div class="col-md-6 mb-3 mb-md-0">
+              <button type="button" class="btn btn-outline-primary w-100" onclick="backToStep1()">
+                <i class="fas fa-arrow-left me-2"></i> Back
+              </button>
+            </div>
+            <div class="col-md-6">
+              <button type="submit" class="btn btn-primary w-100">
+                Submit Request <i class="fas fa-paper-plane ms-2"></i>
+              </button>
+            </div>
           </div>
-          <h5 class="card-title">Digital Marketing</h5>
-          <p class="card-text">Strategic marketing solutions that drive traffic and convert visitors into customers.</p>
         </div>
-      </div>
+      </form>
     </div>
   </div>
 </div>

@@ -935,7 +935,7 @@
               </div>
               <h3 class="service-title">3D Rendering</h3>
               <p class="service-description">Experience photorealistic visuals for architecture, products, and animations with interactive 3D viewers that bring your concepts to life and captivate your audience.</p>
-              <a href="3d-rendering.html" class="service-link">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+              <a href="web-development.php" class="service-link">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
             </div>
           </div>
         </div>
@@ -949,7 +949,7 @@
               </div>
               <h3 class="service-title">AI Automation</h3>
               <p class="service-description">Automate tasks with AI tools like chatbots, content generation, and intelligent business workflows to enhance efficiency, reduce costs, and create smarter business processes.</p>
-              <a href="ai-automation.html" class="service-link">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+              <a href="web-development.php" class="service-link">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
             </div>
           </div>
         </div>
@@ -963,7 +963,7 @@
               </div>
               <h3 class="service-title">Mobile App Development</h3>
               <p class="service-description">Create native and cross-platform mobile applications that provide seamless experiences across all devices, with intuitive interfaces and robust functionality.</p>
-              <a href="mobile-development.html" class="service-link">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+              <a href="web-development.php" class="service-link">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
             </div>
           </div>
         </div>
@@ -977,7 +977,7 @@
               </div>
               <h3 class="service-title">UI/UX Design</h3>
               <p class="service-description">Craft beautiful, intuitive user interfaces and meaningful user experiences that engage visitors, improve satisfaction, and drive conversions for your digital products.</p>
-              <a href="ui-ux-design.html" class="service-link">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+              <a href="web-development.php" class="service-link">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
             </div>
           </div>
         </div>
@@ -990,7 +990,7 @@
               </div>
               <h3 class="service-title">Digital Marketing</h3>
               <p class="service-description">Boost your online presence with comprehensive marketing strategies including SEO, content marketing, social media, and PPC campaigns to reach and engage your target audience.</p>
-              <a href="digital-marketing.html" class="service-link">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+              <a href="web-development.php" class="service-link">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
             </div>
           </div>
         </div>
