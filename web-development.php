@@ -472,6 +472,7 @@
     step1.classList.add("animate-in");
   }
   
+  
   // Form submission
   document.getElementById("formStep2").addEventListener("submit", function(event) {
     const form = this;
